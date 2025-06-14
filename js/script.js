@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const brightnessValue = document.getElementById('brightness-value');
     const reverseInput = document.getElementById('reverse-input');
     // 删除以下两行
-    // const zoomRange = document.getElementById('zoom-range');
-    // const zoomValue = document.getElementById('zoom-value');
+     const zoomRange = document.getElementById('zoom-range');
+     const zoomValue = document.getElementById('zoom-value');
     
     let uploadedImage = null;
     let imageElement = null;
@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // 删除以下缩放事件监听器
-    // zoomRange.addEventListener('input', function() {
-    //     const zoomPercent = this.value + '%';
-    //     zoomValue.textContent = zoomPercent;
-    //     asciiResult.style.transform = `scale(${this.value / 100})`;
-    // });
+     zoomRange.addEventListener('input', function() {
+         const zoomPercent = this.value + '%';
+         zoomValue.textContent = zoomPercent;
+         asciiResult.style.transform = `scale(${this.value / 100})`;
+     });
     
     // 图片上传处理（基本保持不变）
     imageUpload.addEventListener('change', handleFileSelect);
