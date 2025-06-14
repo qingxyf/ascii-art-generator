@@ -18,7 +18,13 @@
                 <div class="result-area">
                     <div class="result-header">
                         <h2>生成结果</h2>
-                        <button id="copy-btn" class="btn" disabled>复制结果</button>
+                        <div class="header-controls">
+                            <div class="zoom-control">
+                                <label for="zoom-range">缩放: <span id="zoom-value">100%</span></label>
+                                <input type="range" id="zoom-range" min="5" max="200" value="100" step="5">
+                            </div>
+                            <button id="copy-btn" class="btn" disabled>复制结果</button>
+                        </div>
                     </div>
                     <div class="result-display" id="result-display">
                         <pre id="ascii-result">请上传图片生成ASCII艺术...</pre>
